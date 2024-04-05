@@ -1,12 +1,14 @@
+package shape;
+
 import java.util.Scanner;
 
 abstract public class Shape {
 
-    abstract public float area();
+    abstract public double area();
     abstract public double perimeter();
 
     public static void main(String[] args){
-        float x = 0;
+        double x = 0;
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the x value: ");
