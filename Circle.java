@@ -1,10 +1,12 @@
+package shape;
+
 public class Circle {
-    float radius = 0;
-    final float PI = (float) (22.0/7);
-    public Circle(float x) {
-        radius = (float) (x/2.0);
+    double radius = 0;
+    final double PI = Math.PI;
+    public Circle(double x) {
+        radius = (double) (x/2.0);
     }
-    public float area(){
+    public double area(){
         return PI*radius*radius;
     }
     public double perimeter(){
