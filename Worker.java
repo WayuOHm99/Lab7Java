@@ -1,3 +1,5 @@
+package employee;
+
 public class Worker extends Employee {
 
     public Worker(int id, double salary) {
