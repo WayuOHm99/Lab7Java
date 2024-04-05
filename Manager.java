@@ -1,17 +1,17 @@
 package employee;
 
-public class Manager extends Employee {
+public class Worker extends Employee {
 
-    public Manager(int id, double salary) {
+    public Worker(int id, double salary) {
         super(id, salary);
     }
 
     @Override
     public double calSalary() {
-        double raise = 0.04;
-        if (id > 300) {
-            raise = 0.06;
+        double raise = 1000;
+        if (salary > 6000) {
+            raise = 500;
         }
-        return salary + (salary * raise);
+        return salary + raise;
     }
 }
