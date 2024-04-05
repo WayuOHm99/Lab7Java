@@ -1,4 +1,5 @@
 package employee;
+
 public abstract class Employee {
 
     protected int id;
