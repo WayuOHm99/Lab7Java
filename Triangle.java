@@ -1,10 +1,11 @@
+package shape;
 import java.util.Map; // This import is not used in the code, so you can remove it.
 
 public class Triangle {
-    float height = 0.0f;  // Initialize with a default value (0.0f for float)
-    float base = 0.0f;     // Initialize with a default value (0.0f for float)
+    double height = 0.0f;  // Initialize with a default value (0.0f for float)
+    double base = 0.0f;     // Initialize with a default value (0.0f for float)
 
-    public Triangle(float x) {
+    public Triangle(double x) {
         if (x <= 0) { // Check for non-positive values
             throw new IllegalArgumentException("Triangle side lengths must be positive.");
         }
@@ -12,7 +13,7 @@ public class Triangle {
         base = x;
     }
 
-    public float area() {
+    public double area() {
         return (1.0f / 2.0f) * base * height; // Use float literals for clarity
     }
 
