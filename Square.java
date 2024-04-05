@@ -1,9 +1,11 @@
+package shape;
+
 public class Square extends Shape {
-    float side = 0;
-    public Square(float x){
+    double side = 0;
+    public Square(double x){
         side = x;
     }
-    public float area(){
+    public double area(){
         return side*side;
     }
     public double perimeter(){
